@@ -1,4 +1,5 @@
 import { Header } from "../../Components/Header";
+import { Sidebar } from "../../Components/Sidebar";
 import { Container } from "./Home.styles";
 
 export const Home = () => {
@@ -10,6 +11,12 @@ export const Home = () => {
           <span>Home - Usuários - Detalhes </span>
 
           <h1>Lista de membros</h1>
+        </div>
+
+        <div className="main-content">
+
+        <Sidebar />
+
         </div>
       </Container>
     </>

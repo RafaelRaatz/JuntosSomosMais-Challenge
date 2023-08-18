@@ -17,4 +17,9 @@ export const Container = styled.div`
     gap: 25px;
     font-size: 12px;
   }
+
+  .main-content{
+    display: flex;
+    margin-top: 50px;
+  }
 `;
