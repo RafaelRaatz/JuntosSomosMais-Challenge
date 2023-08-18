@@ -1,4 +1,4 @@
-import { List, Pagination } from "../../Components";
+import { Footer, List, Pagination } from "../../Components";
 import { Header } from "../../Components/Header";
 import { Sidebar } from "../../Components/Sidebar";
 import { Container } from "./Home.styles";
@@ -15,15 +15,14 @@ export const Home = () => {
         </div>
 
         <div className="main-content">
-
-        <Sidebar />
-        <div className="main-list">
-        <Pagination />
-        <List/>
-        </div>
-
+          <Sidebar />
+          <div className="main-list">
+            <Pagination />
+            <List />
+          </div>
         </div>
       </Container>
+      <Footer />
     </>
   );
 };
