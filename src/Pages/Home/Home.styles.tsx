@@ -21,5 +21,11 @@ export const Container = styled.div`
   .main-content{
     display: flex;
     margin-top: 50px;
+    gap: 15px;
+
+    .main-list{
+      display:flex;
+      flex-direction: column;
+    }
   }
 `;
