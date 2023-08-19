@@ -1,16 +1,34 @@
 import { Container } from "./CardList.styles";
-import  UserImage  from "../../assets/user.jpg";
+import UserImage from "../../assets/user.jpg";
 
-export const CardList = () => {
+interface IUser {
+  name: any;
+  location: any;
+  picture: any;
+}
+
+export const CardList = ({ name, location, picture }: IUser) => {
+  const { first, last } = name;
+  const { large } = picture;
+  const { street, city, state, postcode } = location;
   return (
     <Container>
       <div className="card-content">
-        <img src={UserImage} alt="" />
-        <h2>Joselino Alves</h2>
+        <img src={large} alt="" />
+        <h2>
+          {first[0].toUpperCase() + first.substring(1)}{" "}
+          {last[0].toUpperCase() + last.substring(1)}
+        </h2>
 
-        <span>Rua Espirito Santo, 2096</span>
-        
-        <span>São José De Ribamar <br /> Paraná CEP: 96895</span>
+        <div className="user-info">
+          <span>{street}</span>
+
+          <span className="city">
+            {city[0].toUpperCase() + city.substring(1)}
+           
+          </span>
+          <span className="cep"> {state[0].toUpperCase() + state.substring(1)}  CEP: {postcode}</span>
+        </div>
       </div>
     </Container>
   );

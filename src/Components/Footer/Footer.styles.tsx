@@ -6,46 +6,41 @@ export const Container = styled.div`
   display: flex;
   color: #fff;
   margin-top: 150px;
-  
-  .footer-content{
+
+  .footer-content {
     display: flex;
     margin: 0 auto;
     flex-direction: column;
     margin-top: 30px;
     gap: 30px;
 
-    .logo{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
+    .logo {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
 
-        img{
-            width: 176px;
-            filter:  contrast(0) brightness(2);
-        }
-
+      img {
+        width: 176px;
+        filter: contrast(0) brightness(2);
+      }
     }
     .social-media {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+
+      .icons {
         display: flex;
-        align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
+        color: #28b0fc;
 
-        .icons{
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            color: #28B0FC ;
-            
-
-            .icon{
-                font-size: 30px;
-                
-            }
+        .icon {
+          font-size: 30px;
         }
+      }
     }
   }
-`
-    
-
+`;

@@ -10,27 +10,34 @@ export const Container = styled.div`
   gap: 20px;
   border: 1px solid #e5e5e5;
 
-  .card-content{
+  .card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     gap: 10px;
-    width: 200px;
 
-    img{
-    width: 120px;
+    img {
+      width: 120px;
+      border-radius: 100px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .city {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      .cep {
+        font-size: 14px;
+      }
+    }
   }
-
-  h2{
-    font-size: 20px;
-  }
-
-  span{
-    font-size: 14x;
-  }
-
-  }
-
-
 `;
