@@ -1,8 +1,19 @@
 import { Container } from "./Header.styles";
 import { AiOutlineSearch } from "react-icons/ai";
 import LogoImage from "../../assets/logo.svg";
+import { useGameStore } from "../../store/users";
+import { ChangeEvent } from "react";
 
 export const Header = () => {
+  const updateOrigin = useGameStore(state => state.updateOrigin);
+  const updateUser = useGameStore(state => state.updateUser);
+
+
+  const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
+    updateUser(e.target.value);
+    updateOrigin("search");
+  };
+
   return (
     <Container>
       <div className="header-content">
@@ -17,6 +28,7 @@ export const Header = () => {
               className="header-input"
               type="text"
               placeholder="Buscar Aqui"
+              onChange={(e) => handleSearch(e)}
             />
           </div>
 

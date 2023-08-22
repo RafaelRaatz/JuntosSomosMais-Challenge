@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 272px;
-  height: 474px;
+  height: 100%;
   border: 1px solid #e5e5e5;
 
   .content{
@@ -23,9 +23,11 @@ export const Container = styled.div`
             margin-right: 10px;
         }
 
-        a{
-            text-decoration: underline;
-            color: #000;
+        .list-button{
+          display: flex;
+          margin: 0px;
+          background-color: #fff;
+          text-decoration: underline;
         }
     }
   }

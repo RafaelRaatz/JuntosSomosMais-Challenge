@@ -16,6 +16,7 @@ export const Home = () => {
 
         <div className="main-content">
           <Sidebar />
+
           <div className="main-list">
             <Pagination />
             <List />
